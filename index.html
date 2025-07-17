@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lista zadań</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Lista zadań</h1>
+      </header>
+      <main>
+        <!-- input form -->
+        <form id="taskForm">
+          <div class="input-group">
+            <input
+              type="text"
+              id="taskTitle"
+              placeholder="Dodaj nowe zadanie"
+              required
+            />
+            <button id="addTask" class="add" type="submit">Dodaj</button>
+          </div>
+        </form>
+        <!-- filtrowanie -->
+        <div id="filterOptions">
+          <label>
+            <input type="radio" name="filter" value="all" checked />
+            Wszystkie
+          </label>
+          <label>
+            <input type="radio" name="filter" value="completed" />
+            Zakończone
+          </label>
+          <label>
+            <input type="radio" name="filter" value="pending" />
+            Do zrobienia
+          </label>
+        </div>
+        <!-- lista -->
+        <ul id="tasksList"></ul>
+        <!-- wyczyść listę -->
+        <button id="clearTasks" class="delete">Wyczyść zadania</button>
+        <!-- liczniki -->
+        <div class="counters">
+          <div id="taskCount" class="counter"></div>
+          <div id="completedCount" class="counter"></div>
+          <div id="pendingCount" class="counter"></div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <p>Lista zadań - Szkolenie Frontend | PS 2025</p>
+    </footer>
+  </body>
+
+  <script src="script.js"></script>
+</html>

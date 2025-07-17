@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  user-select: none;
+}
+
+.wrapper {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.input-group input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.input-group button {
+  flex-shrink: 0;
+  width: 90px;
+}
+
+button {
+  color: white;
+  font-size: 14px;
+  padding: 9px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+button.add {
+  background-color: #57bf5a;
+}
+button.add:hover {
+  background-color: #38a63d;
+}
+button.delete {
+  background-color: #fa5260;
+}
+button.delete:hover {
+  background-color: #ff1b1b;
+}
+
+#filterOptions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+#filterOptions label,
+input {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  word-break: break-word;
+  cursor: pointer;
+}
+
+li button {
+  background-color: transparent;
+  color: #f96a76;
+  font-size: 18px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+li button:hover {
+  color: red;
+}
+
+.counters {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.counter {
+  user-select: text;
+}
+
+footer {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 13px;
+  color: #666;
+}
