@@ -91,6 +91,14 @@ input {
   cursor: pointer;
 }
 
+#noTask {
+  margin-top: 20px;
+  display: show;
+  text-align: center;
+  color: #888;
+  font-size: 18px;
+}
+
 ul {
   list-style: none;
   padding: 0;

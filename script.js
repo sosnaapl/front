@@ -41,6 +41,13 @@ function renderTaskList(filter = getCurrentFilter()) {
   const tasksList = document.getElementById("tasksList");
   tasksList.innerHTML = "";
 
+  const noTasksText = document.getElementById("noTask");
+  if (tasks.length === 0) {
+    noTasksText.style.display = "block";
+  } else {
+    noTasksText.style.display = "none";
+  }
+
   //filtrowanie zadań
   const filteredTasks = tasks.filter((task) => {
     if (filter === "completed") {
