@@ -34,6 +34,7 @@ document.getElementById("taskForm").addEventListener("submit", (e) => {
   document.getElementById("taskTitle").value = "";
 
   localStorage.setItem("tasks", JSON.stringify(tasks));
+  setCounters();
 });
 
 //funkcja renderująca listę zadań
